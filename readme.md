@@ -9,3 +9,4 @@ For tagging IG gallerries in old webpage using images from a monthly IG meeting 
 Adds a submenu named **Interest Group Tagging**.
 Use this menu script to tag files for the Interest Group galleries in the **NEW website**.
 This script started as a duplicate of FestivalTagging and ignores the first field if it is a sequence number.
+All debugged and tested; it works! YAY
