@@ -14,14 +14,14 @@ if (BridgeTalk.appName == "bridge") {
     try {
         // create menus if they don't exist
         if (MenuElement.find('pmwTools') == null) {
-            // menu not created yet
+            // menu not created yet. create regular menu.
             MenuElement.create('menu', 'PhotoMidwest Tools', 'at the end of Tools', 'pmwTools');
             var ftCmd = MenuElement.create('command', 'Add Festival Image Tags', 'at the end of pmwTools', 'pmwTools/sub1');
             var csdCmd = MenuElement.create('command', 'Create SquareSpace Description', 'at the end of pmwTools', 'pmwTools/sub2');
         }
         if (MenuElement.find('cpmwTools') == null) {
-            // create contextual menu
-            MenuElement.create('menu', 'PhotoMidwest Tools', 'after Thumbnail/Open', 'cpmwTools')
+            // create CONTEXTUAL menu
+            MenuElement.create('menu', 'PhotoMidwest Tools', 'after Thumbnail/Open', 'cpmwTools');
             var ftContCmd = MenuElement.create('command', 'Add Festival Image Tags', 'at the end of cpmwTools', 'cpmwTools/sub1');
             var csdContCmd = MenuElement.create('command', 'Create SquareSpace Description', 'at the end of cpmwTools', 'cpmwTools/sub2');
         }
@@ -29,6 +29,7 @@ if (BridgeTalk.appName == "bridge") {
         alert(e + ' ' + e.line);
     }
 }
+
 
 ftCmd.onSelect = function () {
     displayDialog();
@@ -40,7 +41,7 @@ ftContCmd.onSelect = function () {
 
 function displayDialog() {
     // Display modeless dialog
-    var FestPalette = new Window("palette"); 
+    var FestPalette = new Window('palette'); 
     FestPalette.text = "PhotoMidwest Tools > Add Festival Image Tags"; 
     FestPalette.orientation = "row"; 
     FestPalette.alignChildren = ["fill","top"]; 

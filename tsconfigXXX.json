@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "module": "none",
+        "noLib": true,
+        "types": [
+            "types-for-adobe/photoshop/2015.5"
+        ]
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
