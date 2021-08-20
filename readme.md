@@ -10,3 +10,5 @@ Adds a submenu named **Interest Group Tagging**.
 Use this menu script to tag files for the Interest Group galleries in the **NEW website**.
 This script started as a duplicate of FestivalTagging and ignores the first field if it is a sequence number.
 All debugged and tested; it works! YAY
+### 20Aug2021 Got debugging to work from VSCODE - YAY!
+Installed the new version of ExtendScript Debugger (1.1.2 7/10/2019) and followed these instructions: https://marketplace.visualstudio.com/items?itemName=Adobe.extendscript-debug

@@ -10,6 +10,13 @@
             "name": "Ask for script name",
             "program": "${workspaceFolder}/${command:AskForScriptName}",
             "stopOnEntry": false
+        },
+        {
+            "type": "extendscript-debug",
+            "request": "launch",
+            "name": "Testing this plugin",
+            "program": "${workspaceFolder}/PhotoMidwestTools.jsx",
+            "stopOnEntry": false
         }
     ]
 }
